@@ -1,6 +1,5 @@
 #
 # Makefile for the linux kernel.
-# /linux-4.4/kernel/
 #
 
 obj-y     = fork.o exec_domain.o panic.o \
@@ -10,7 +9,7 @@ obj-y     = fork.o exec_domain.o panic.o \
 	    extable.o params.o \
 	    kthread.o sys_ni.o nsproxy.o \
 	    notifier.o ksysfs.o cred.o reboot.o \
-	    async.o range.o smpboot.o my_queue_syscall.o 	    
+	    async.o range.o smpboot.o sched_faster.o sched_slower.o
 
 obj-$(CONFIG_MULTIUSER) += groups.o
 

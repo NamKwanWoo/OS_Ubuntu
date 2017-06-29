@@ -1,5 +1,4 @@
 /*
- * include/linux/syscalls.h
  * syscalls.h - Linux syscall interfaces (non-arch-specific)
  *
  * Copyright (c) 2004 Randy Dunlap
@@ -890,7 +889,6 @@ asmlinkage long sys_membarrier(int cmd, int flags);
 
 asmlinkage long sys_mlock2(unsigned long start, size_t len, int flags);
 
-asmlinkage void sys_namnamnam_enqueue(int n); //Add namnamnam_enqueue
-asmlinkage int	sys_namnamnam_dequeue(void); //Add namnamnam_dequeue
-asmlinkage void sys_namnamnam_print(void);   //Add namnamnam_print
+asmlinkage void sys_sched_faster(int);
+asmlinkage void sys_sched_slower(int);
 #endif
